@@ -1,0 +1,89 @@
+//font family
+$font-family: 'Tahoma',sans-serif;
+$second-fond: 'Roboto',sans-serif;
+
+$fs: 20px;
+$line-height: 34px;
+
+//color 
+$color-text: #000;
+$white: #fff;
+$ligth-gray: #F6F6F6;
+$pink: #E95B8B;
+$blue: #1D7ABF;
+
+
+@mixin border-radius($radius) {
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -o-border-radius: $radius;
+}
+
+@mixin transform ($property) {
+    transform: $property;
+    -webkit-transform: $property;
+    -moz-transform: $property;
+    -ms-transform: $property;
+    -o-transform: $property;
+}
+
+@mixin transition ($property) {
+    transition: $property;
+    -webkit-transition: $property;
+    -moz-transition: $property;
+    -ms-transition: $property;
+    -o-transition: $property;
+}
+
+@mixin animate ($property) {
+    animation: $property;
+    -webkit-animation: $property;
+}
+
+html {
+    font-size: $fs;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: $fs;
+    line-height: $line-height;
+    color: $color-text;
+    background-color: $white;
+}
+
+a:hover{
+	@include transition( .4s ease);
+}
+
+
+h1, h2, h3 {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.fs-22 {
+    font-size: $fs + 2px;
+    line-height: $line-height - 2px;
+}
+
+.fs-42 {
+    font-size: $fs + 22px;
+    line-height: $line-height + 17px;
+}
+
+.overflow {
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+
