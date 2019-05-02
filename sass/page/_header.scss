@@ -1,0 +1,125 @@
+.header {
+    padding: 15px 0 28px;
+    .logo {
+        display: block;
+        width: 194px;
+    }
+    &__nav {
+        position: relative;
+        width: 100%;
+    }
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 95px 0;
+    background-color: $ligth-gray;
+    border-top: 2px solid $gray;
+    margin-top: 30px;
+    &__btn {
+        font-size: $fs + 2px;
+        font-weight: 700;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+        padding: 0;
+        >span {
+            display: inline-block;
+            margin-left: 10px;
+            width: 42px;
+            height: 42px;
+            background: url(../icons/btn-menu.svg) no-repeat center center / contain;
+        }
+        &.open {
+            >span {
+                background: url(../icons/close.svg) no-repeat center center / contain;
+            }
+        }
+    }
+    &__item {
+        font-size: $fs + 2px;
+        line-height: normal;
+        width: 320px;
+        li a {
+            color: $color-text;
+            display: block;
+            padding: 20px 0;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        > li >ul {
+            font-size: $fs;
+            li a {
+                color: $dark-gray;
+            }
+        }
+    }
+}
+
+.language {
+    font-size: $fs;
+    font-weight: 700;
+    text-transform: uppercase;
+    >li {
+        margin-right: 10px;
+    }
+    &__item {
+        display: block;
+        padding: 2px 8px;
+        color: $color-text;
+        border: 3px solid transparent;
+        &.active {
+            border-color: $black;
+        }
+    }
+}
+
+.search {
+    position: relative;
+    height: 60px;
+    width: 267px;
+    display: flex;
+    margin-right: 25px;
+    &__btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 267px;
+        height: inherit;
+        background-color: $pink;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $white;
+        text-transform: uppercase;
+        cursor: pointer;
+        >img {
+            margin-right: 20px;
+        }
+    }
+    &__input {
+        position: absolute;
+        top: 0;
+        right: 100%;
+        height: 60px;
+        width: 0;
+        border: 1px solid $dark-gray;
+        font-size: $fs;
+        border-right: none;
+        @include transition(width 0.5s ease);
+        opacity: 0;
+        &.open {
+            width: 650px;
+            padding: 0 22px;
+            opacity: 1;
+        }
+    }
+}
