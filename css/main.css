@@ -126,7 +126,7 @@ h4, h5, h6 {
   margin-left: 30px;
 }
 
-.btn-blue {
+.btn-blue, .btn-pink {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -138,16 +138,31 @@ h4, h5, h6 {
           justify-content: center;
   text-transform: uppercase;
   font-size: 20px;
+  color: #fff;
 }
 
 .btn-blue {
   width: 226px;
   height: 60px;
-  color: #fff;
   background-color: #1D7ABF;
 }
 .btn-blue > img {
   margin-left: 15px;
+}
+.btn-blue:hover {
+  color: #fff;
+}
+
+.btn-pink {
+  width: 226px;
+  height: 60px;
+  background-color: #E95B8B;
+}
+.btn-pink > img {
+  margin-left: 14px;
+}
+.btn-pink:hover {
+  color: #fff;
 }
 
 .header {
@@ -304,6 +319,10 @@ h4, h5, h6 {
 .about-project p:last-child {
   margin-bottom: 0;
 }
+.about-project__title {
+  width: 80%;
+  margin: 0 auto 50px;
+}
 
 .our-tasks {
   padding: 60px 0 85px;
@@ -330,6 +349,7 @@ h4, h5, h6 {
   -webkit-box-shadow: 0px 4px 84px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 4px 84px rgba(0, 0, 0, 0.05);
   border-top: 11px solid #1D7ABF;
+  height: 100%;
 }
 .our-tasks__card_border-pink {
   border-color: #E95B8B;
@@ -366,6 +386,7 @@ h4, h5, h6 {
   -o-object-fit: cover;
   object-fit: cover;
   height: 100%;
+  width: 100%;
 }
 .news-block__btn {
   position: absolute;
@@ -379,6 +400,10 @@ h4, h5, h6 {
 .news-block__text {
   padding: 0 16px;
 }
+.news-block__text > p {
+  max-height: 104;
+  overflow: hidden;
+}
 .news-block__card_title {
   font-size: 22px;
   line-height: 32px;
@@ -389,6 +414,53 @@ h4, h5, h6 {
   margin-top: 20px;
   display: inline-block;
   color: #4A494F;
+}
+
+.video-block {
+  padding: 40px 0 50px;
+  background-color: #F6F6F6;
+}
+.video-block__title {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.our-partners {
+  padding: 100px 0;
+}
+.our-partners__title {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.our-partners__content {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: calc(100% + 20px);
+  margin-left: -10px;
+}
+.our-partners__card {
+  width: 226px;
+  max-width: 25%;
+  height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  margin: 0 10px 37px;
+}
+.our-partners__img {
+  min-height: 124px;
+  margin-bottom: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer {
@@ -423,6 +495,7 @@ h4, h5, h6 {
 .footer__logo {
   width: 180px;
   display: block;
+  max-width: 100%;
 }
 
 @media only screen and (min-width: 1600px) {
