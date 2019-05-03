@@ -70,6 +70,9 @@ h1, h2, h3 {
     text-transform: uppercase;
     font-weight: 700;
 }
+h4, h5, h6 {
+    font-weight: 700;
+}
 
 .fs-22 {
     font-size: $fs + 2px;
@@ -85,6 +88,45 @@ h1, h2, h3 {
     overflow: hidden;
     width: 100%;
     height: 100vh;
+}
+
+.title-section {
+    color: $black;
+    font-size: $fs + 22px;
+    line-height: $line-height + 17px;
+    margin-bottom: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    >img {
+        width: 50px;
+        margin-right: 25px;
+    }
+}
+
+.social-icon {
+    >a {
+        margin-left: 30px;
+    }
+}
+
+%btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: $fs;
+}
+
+.btn-blue {
+    @extend %btn;
+    width: 226px;
+    height: 60px;
+    color: $white;
+    background-color: $blue;
+    >img {
+        margin-left: 15px;
+    }
 }
 
 

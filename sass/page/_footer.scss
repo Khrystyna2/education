@@ -1,0 +1,33 @@
+.footer {
+    padding: 50px 0;
+    background-color: $ligth-gray;
+    p {
+        font-size: $fs - 2px;
+        line-height: $line-height - 4px;
+        color: $dark-gray;
+    }
+    &__menu {
+        line-height: $line-height - 10px;
+        margin-bottom: 64px;
+    }
+    &__menu-item {
+        width: 310px;
+        li {
+            margin-bottom: 28px;
+            a {
+                color: $black;
+            }
+            >ul {
+                padding-left: 18px;
+                margin-top: 28px;
+                li a {
+                    color: $dark-gray;
+                }
+            }
+        }
+    }
+    &__logo {
+        width: 180px;
+        display: block;
+    }
+}
