@@ -123,3 +123,23 @@
         }
     }
 }
+
+#plugin {
+    width: 62px;
+    cursor: pointer;
+    &.fixed {
+        position: fixed;
+        top: 25px;
+        z-index: 101;
+        @include animate(animateIcon 0.5s ease);
+    }
+}
+
+@keyframes animateIcon {
+    0%{
+        @include transform(translateY(-100%));
+    }
+    100%{
+        @include transform(translateY(0));
+    }
+}

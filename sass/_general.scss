@@ -107,6 +107,9 @@ h4, h5, h6 {
 .social-icon {
     >a {
         margin-left: 30px;
+        &:first-child {
+            margin-left: 0;
+        }
     }
 }
 

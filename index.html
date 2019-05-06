@@ -35,9 +35,9 @@
                         <div class="d-flex justify-content-end align-items-center">
                             <form class="search">
                                 <input type="search" class="search__input" />
-                                <span class="search__btn"><img src="icons/magnifying-glass.svg" alt="magnifying-glass" />пошук</span>
+                                <div class="search__btn"><img src="icons/magnifying-glass.svg" alt="magnifying-glass" /><span>пошук</span></div>
                             </form>
-                            <a href="#"><img src="icons/btn.png" alt=""/></a>
+                            <div id="plugin"><img src="icons/btn.png" alt=""/></div>
                         </div>
                     </div>
                     <div class="menu">
@@ -129,7 +129,7 @@
                 <div class="container">
                     <h2 class="title-section news-block__title"><img src="icons/newspaper.svg" alt="newspaper" />Новини</h2>
                     <div class="row">
-                        <div class="col-12 col-md-4">
+                        <div class="col-12 col-md-6 col-lg-4">
                             <div class="news-block__card">
                                 <a href="#" class="news-block__img">
                                     <img src="image/index/image-1.png" alt="" />
@@ -138,9 +138,9 @@
                                     /></span>
                                 </a>
                                 <div class="news-block__text">
-                                    <h4 class="news-block__card_title">
+                                    <a href="#" class="news-block__card_title">
                                         Останній день Тижня Толерантності та інклюзії присвятили надважливій темі - Співпраця з батьками
-                                    </h4>
+                                    </a>
                                     <p>
                                         Світ сім'ї дитини з особливими освітніми потребами розкривала чудова мама чудового хлопчика Ярослава
                                         Нікішин...
@@ -149,7 +149,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-4">
+                        <div class="col-12 col-md-6 col-lg-4">
                             <div class="news-block__card">
                                 <a href="#" class="news-block__img">
                                     <img src="image/index/image-2.png" alt="" />
@@ -158,9 +158,9 @@
                                     /></span>
                                 </a>
                                 <div class="news-block__text">
-                                    <h4 class="news-block__card_title">
+                                    <a href="#" class="news-block__card_title">
                                         Фізкультурно-реабілітаційний збір для людей з інвалідністю по зору
-                                    </h4>
+                                    </a>
                                     <p>
                                         Ми раді повідомити вам про те, що завдяки спільній програмі Укр-центру "Інваспорт" та спортивній
                                         федерації незрячих України...
@@ -169,7 +169,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-4">
+                        <div class="col-12 col-md-6 col-lg-4">
                             <div class="news-block__card">
                                 <a href="#" class="news-block__img">
                                     <img src="image/index/image-3.png" alt="" />
@@ -178,9 +178,9 @@
                                     /></span>
                                 </a>
                                 <div class="news-block__text">
-                                    <h4 class="news-block__card_title">
+                                    <a href="#" class="news-block__card_title">
                                         День другий «Світ людей «А»» - тижня Толерантності та інклюзії - був присвячений темі РАС
-                                    </h4>
+                                    </a>
                                     <p>
                                         Педагоги м. Львова мали можливіть поспілкуватись з педагогом практиком, вчителем-логопедом НРЦ
                                         «Довіра»...
@@ -196,8 +196,53 @@
             <section class="video-block">
                 <div class="container">
                     <h2 class="title-section video-block__title"><img src="icons/video-camera.svg" alt="video-camera" />Відео</h2>
-                    <div class="row"></div>
-                    <a href="#" class="btn-pink">дивитись все <img src="icons/add.svg" alt="plus"/></a>
+                    <div class="row">
+                        <div class="col-12 col-sm-6">
+                            <div class="video-block__card d-flex">
+                                <div class="video-block__video">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/bQQQQtAnJ4I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="video-block__desc">
+                                    <a href="#" class="video-block__card_title">Я звертаюся до кандидата в президенти Володимира Зеленського з вимогою вибачення</a>
+                                    <span class="video-block__date">09.04.2019</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="video-block__card d-flex">
+                                <div class="video-block__video">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/bQQQQtAnJ4I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="video-block__desc">
+                                    <a href="#" class="video-block__card_title">21 березня – Всесвітній день людини з синдромом Дауна</a>
+                                    <span class="video-block__date">21.03.2019</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="video-block__card d-flex">
+                                <div class="video-block__video">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/bQQQQtAnJ4I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="video-block__desc">
+                                    <a href="#" class="video-block__card_title">Жестова мова. Коментарі глухого американця стосовно виборів в Україні на основі</a>
+                                    <span class="video-block__date">22.03.2019</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="video-block__card d-flex">
+                                <div class="video-block__video">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/bQQQQtAnJ4I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="video-block__desc">
+                                    <a href="#" class="video-block__card_title">Незрячий програміст Олексій Садовий – один із затребуваних спеціалістів України.</a>
+                                    <span class="video-block__date">16.04.2019</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn-pink video-block__btn-all">дивитись все <img src="icons/add.svg" alt="plus"/></a>
                 </div>
             </section>
             <section class="our-partners">
@@ -357,7 +402,7 @@
                         </p>
                     </div>
                     <div class="col-12 col-md-2">
-                        <div class="social-icon d-flex justify-content-end">
+                        <div class="social-icon d-flex justify-content-md-end justify-content-center">
                             <a href="#">
                                 <img src="icons/facebook.svg" alt="facebook" />
                             </a>
