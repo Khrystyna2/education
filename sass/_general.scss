@@ -107,6 +107,9 @@ h4, h5, h6 {
 .social-icon {
     >a {
         margin-left: 30px;
+        &:first-child {
+            margin-left: 0;
+        }
     }
 }
 
@@ -116,16 +119,32 @@ h4, h5, h6 {
     justify-content: center;
     text-transform: uppercase;
     font-size: $fs;
+    color: $white;
 }
 
 .btn-blue {
     @extend %btn;
     width: 226px;
     height: 60px;
-    color: $white;
     background-color: $blue;
     >img {
         margin-left: 15px;
+    }
+    &:hover {
+        color: $white;
+    }
+}
+
+.btn-pink {
+    @extend %btn;
+    width: 226px;
+    height: 60px;
+    background-color: $pink;
+    >img {
+        margin-left: 14px;
+    }
+    &:hover {
+        color: $white;
     }
 }
 
