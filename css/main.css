@@ -547,6 +547,58 @@ h4, h5, h6 {
           justify-content: center;
 }
 
+.about-us__banner {
+  background: #1D7ABF url(../image/about-us-banner.png) no-repeat top left/cover;
+  padding: 80px 0 60px;
+  color: #fff;
+  margin-bottom: 80px;
+}
+.about-us__banner .title-section {
+  color: #fff;
+}
+.about-us__development {
+  margin-bottom: 110px;
+}
+.about-us__development > p {
+  color: #4A494F;
+}
+.about-us__task {
+  margin-bottom: 100px;
+}
+.about-us__task-item {
+  width: 74%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about-us__task-icon {
+  width: 160px;
+  min-width: 160px;
+  height: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin: 25px 50px 25px 0;
+  background-color: #1D7ABF;
+}
+.about-us__task-icon_pink {
+  background-color: #E95B8B;
+}
+
 .footer {
   padding: 50px 0;
   background-color: #F6F6F6;
@@ -610,6 +662,10 @@ h4, h5, h6 {
   .footer__menu-item {
     width: 290px;
   }
+
+  .about-us__task-item {
+    width: 90%;
+  }
 }
 @media only screen and (max-width: 1199.8px) {
   body {
@@ -657,6 +713,19 @@ h4, h5, h6 {
   .our-partners__card {
     width: 25%;
     max-width: 34%;
+  }
+
+  .about-us__banner {
+    background-position: top left -120px;
+  }
+  .about-us__task-item {
+    width: 100%;
+  }
+  .about-us__task-icon {
+    width: 140px;
+    min-width: 140px;
+    height: 140px;
+    margin: 25px 40px 25px 0;
   }
 }
 @media only screen and (max-width: 991.8px) {
@@ -880,6 +949,24 @@ h4, h5, h6 {
   .footer .social-icon {
     margin-top: 30px;
   }
+
+  .about-us__banner {
+    background: #1D7ABF;
+    padding: 40px 20px;
+    margin-bottom: 40px;
+  }
+  .about-us__development {
+    margin-bottom: 70px;
+  }
+  .about-us__task {
+    margin-bottom: 60px;
+  }
+  .about-us__task-icon {
+    padding: 22px;
+    width: 100px;
+    min-width: 100px;
+    height: 100px;
+  }
 }
 @media only screen and (max-width: 575.8px) {
   .title-section {
@@ -1005,6 +1092,23 @@ h4, h5, h6 {
   }
   .footer__menu-item li > ul {
     margin-top: 14px;
+  }
+
+  .about-us__development .title-section {
+    font-size: 22px;
+  }
+  .about-us__task-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 26px;
+  }
+  .about-us__task-icon {
+    width: 120px;
+    min-width: 120px;
+    height: 120px;
+    margin: 0 auto 14px;
   }
 }
 

@@ -36,6 +36,12 @@
             width: 290px;
         }
     }
+
+    .about-us {
+        &__task-item {
+            width: 90%;
+        }
+    }
 }
 
 @media only screen and (max-width: 1199.8px) {
@@ -87,6 +93,20 @@
         &__card {
             width: 25%;
             max-width: 34%;
+        }
+    }
+    .about-us {
+        &__banner {
+            background-position: top left -120px;
+        }
+        &__task-item {
+            width: 100%;
+        }
+        &__task-icon {
+            width: 140px;
+            min-width: 140px;
+            height: 140px;
+            margin: 25px 40px 25px 0;
         }
     }
 }
@@ -325,6 +345,25 @@
             margin-top: 30px;
         }
     }
+    .about-us {
+        &__banner {
+            background: $blue ;
+            padding: 40px 20px;
+            margin-bottom: 40px;
+        }
+        &__development {
+            margin-bottom: 70px;
+        }
+        &__task {
+            margin-bottom: 60px;
+        }
+        &__task-icon {
+            padding: 22px;
+            width: 100px;
+            min-width: 100px;
+            height: 100px;
+        }
+    }
 }
 
 @media only screen and (max-width: 575.8px) {
@@ -443,6 +482,24 @@
                     margin-top: 14px;
                 }
             }
+        }
+    }
+
+    .about-us {
+        &__development {
+            .title-section {
+                font-size: $fs +2px;
+            }
+        }
+        &__task-item {
+            flex-direction: column;
+            margin-bottom: 26px;
+        }
+        &__task-icon {
+            width: 120px;
+            min-width: 120px;
+            height: 120px;
+            margin: 0 auto 14px;
         }
     }
 }
