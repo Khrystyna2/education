@@ -37,6 +37,13 @@
             width: 290px;
         }
     }
+
+    .about-us {
+        &__task-item {
+            width: 90%;
+        }
+    }
+    
     .open-news-title {
         strong{
         font-size: 25px;
@@ -101,6 +108,26 @@
             max-width: 34%;
         }
     }
+    .about-us {
+        &__banner {
+            background-position: top left -120px;
+        }
+        &__task-item {
+            width: 100%;
+        }
+        &__task-icon {
+            width: 140px;
+            min-width: 140px;
+            height: 140px;
+            margin: 25px 40px 25px 0;
+        }
+    }
+    .FAQ {
+        padding-bottom: 100px;
+        &__question {
+            font-size: $fs + 6px;
+        }
+    }
 }
 
 @media only screen and (max-width: 991.8px) {
@@ -113,19 +140,18 @@
         }
     }
 
-
-.search {
-    width: 200px;
-    margin-right: 20px;
-    &__btn {
+    .search {
         width: 200px;
-    }
-    &__input {
-        &.open {
-            width: 410px;
+        margin-right: 20px;
+        &__btn {
+            width: 200px;
+        }
+        &__input {
+            &.open {
+                width: 410px;
+            }
         }
     }
-}
 
     .our-tasks {
         padding: 40px 0 65px;
@@ -180,6 +206,8 @@
     }
     .menu {
         padding: 35px 0;
+        top: 140px;
+        margin-top: 0;
         &__btn {
             font-size: $fs - 2px;
             margin-left: 20px;
@@ -336,15 +364,53 @@
             margin-top: 30px;
         }
     }
+
+   
+
+    .about-us {
+        &__banner {
+            background: $blue ;
+            padding: 40px 20px;
+            margin-bottom: 40px;
+        }
+        &__development {
+            margin-bottom: 70px;
+        }
+        &__task {
+            margin-bottom: 60px;
+        }
+        &__task-icon {
+            padding: 22px;
+            width: 100px;
+            min-width: 100px;
+            height: 100px;
+        }
+    }
+
+    .FAQ {
+        padding-bottom: 60px;
+        &__item {
+            padding: 30px 0 25px;
+            >p {
+                margin-bottom: 20px;
+            }
+        }
+        &__question {
+            font-size: $fs + 2px;
+            line-height: $line-height;
+            margin-bottom: 25px;
+        }
+    }
     .news-text-div {
-    margin-top: 30px;
-}
+        margin-top: 30px;
+        }
 }
 
 @media only screen and (max-width: 575.8px) {
     .title-section {
         font-size: $fs + 4px;
         margin-bottom: 30px;
+        flex-wrap: wrap;
         >img {
             width: 32px;
         }
@@ -448,6 +514,8 @@
     .footer {
         &__menu {
             flex-direction: column;
+            font-size: $fs - 2px;
+            line-height: $line-height - 6px;
         }
         &__menu-item {
             width: 100%;
@@ -460,6 +528,37 @@
         }
     }
 
+    .about-us {
+        &__development {
+            .title-section {
+                font-size: $fs +2px;
+            }
+        }
+        &__task-item {
+            flex-direction: column;
+            margin-bottom: 26px;
+        }
+        &__task-icon {
+            width: 120px;
+            min-width: 120px;
+            height: 120px;
+            margin: 0 auto 14px;
+        }
+    }
+    .FAQ {
+        &__question {
+            font-size: $fs;
+        }
+    }
+}
+
+@media only screen and (max-width: 374px) {
+    .title-section {
+        font-size: $fs;
+        >img {
+            width: 30px;
+        }
+    }
 
 }
 @media only screen and (max-width: 991.8px) {

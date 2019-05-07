@@ -1,9 +1,9 @@
-.center-title{
-	margin-top: 37px;
-	margin-bottom: 0px;
+.center-title {
+    margin-top: 37px;
+    margin-bottom: 0px;
 }
 
-.line-title{
+.line-title {
     height: 50px;
     border-bottom: 1px solid $gray;
     width: calc(100% - 30px);
@@ -12,43 +12,41 @@
     flex: initial;
     max-width: initial;
 }
-.video-content{
-	margin-top: 50px;
+.video-content {
+    margin-top: 50px;
 }
 
- .pagination-nav{
+.pagination-nav{
 	margin:120px 0px ; 
 }
 .pagination{
 	justify-content: center;
-
-	li {
-		
-			a {
-			font-family: Roboto;
-			font-weight: bold;
-			font-size: 20px;
-			line-height: 23px;
-			letter-spacing: 0.05em;
-			text-transform: uppercase;
-			color: #FFFFFF;
-			background-color: $blue;
-			border: none;
-			margin-right: 5px;
-				img{
-					margin-bottom: 3px;
-				}
-			}
-		}
-
+    li {
+        a {
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 23px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: $white;
+            background-color: $blue;
+            border: none;
+            margin-right: 5px;
+            img {
+                margin-bottom: 3px;
+            }
+        }
+    }
 }
-.page-item.active .page-link{
-		background-color: transparent;
-		color: $black;
-		border: 1px solid $gray;
-	}
-.page-item:last-child .page-link, .page-item:first-child .page-link {	
-border-radius: 0px;
+.page-item.active .page-link {
+    background-color: transparent;
+    color: $black;
+    border: 1px solid $gray;
+}
+.page-item:last-child .page-link,
+.page-item:first-child .page-link {
+    border-radius: 0px;
 }
 .video-discr p{
 	font-size: 22px;

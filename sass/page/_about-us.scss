@@ -1,0 +1,39 @@
+.about-us {
+    &__banner {
+        background: $blue url(../image/about-us-banner.png) no-repeat top left/cover;
+        padding: 80px 0 60px;
+        color: $white;
+        margin-bottom: 80px;
+        .title-section {
+            color: $white;
+        }
+    }
+    &__development {
+        margin-bottom: 110px;
+        >p {
+            color: $dark-gray;
+        }
+    }
+    &__task {
+        margin-bottom: 100px;
+    }
+    &__task-item {
+        width: 74%;
+        display: flex;
+        align-items: center;
+    }
+    &__task-icon {
+        width: 160px;
+        min-width: 160px;
+        height: 160px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include border-radius(50%);
+        margin: 25px 50px 25px 0;
+        background-color: $blue;
+        &_pink {
+            background-color: $pink;
+        }
+    }
+}
