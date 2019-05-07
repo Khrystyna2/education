@@ -599,6 +599,26 @@ h4, h5, h6 {
   background-color: #E95B8B;
 }
 
+.FAQ {
+  padding-bottom: 120px;
+}
+.FAQ__item {
+  border-top: 1px solid #C4C4C4;
+  padding: 40px 0 35px;
+}
+.FAQ__item > p {
+  color: #4A494F;
+  margin-bottom: 30px;
+}
+.FAQ__item > p:last-child {
+  margin-bottom: 0;
+}
+.FAQ__question {
+  font-size: 28px;
+  line-height: 37px;
+  margin-bottom: 35px;
+}
+
 .footer {
   padding: 50px 0;
   background-color: #F6F6F6;
@@ -656,7 +676,7 @@ h4, h5, h6 {
 }
 
 .pagination-nav {
-  margin-top: 120px;
+  margin: 120px 0px;
 }
 
 .pagination {
@@ -665,13 +685,13 @@ h4, h5, h6 {
           justify-content: center;
 }
 .pagination li a {
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 20px;
   line-height: 23px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #fff;
   background-color: #1D7ABF;
   border: none;
   margin-right: 5px;
@@ -691,6 +711,11 @@ h4, h5, h6 {
   border-radius: 0px;
 }
 
+.video-discr p {
+  font-size: 22px;
+  line-height: 32px;
+}
+
 .list-of-literature li span {
   font-size: 24px;
   line-height: 29px;
@@ -698,6 +723,123 @@ h4, h5, h6 {
 
 .list-of-literature li {
   margin-top: 45px;
+}
+
+.list-of-literature {
+  margin-bottom: 120px;
+}
+
+.map-list > li {
+  border-bottom: 1px solid #E5E5E5;
+  padding: 30px 0;
+  text-align: center;
+}
+.map-list > li a {
+  font-size: 24px;
+  line-height: 29px;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+.map-list li:first-child {
+  border-top: 1px solid #E5E5E5;
+}
+
+.map-container .row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.map-container .title-section {
+  margin-bottom: 60px;
+}
+
+.map-list {
+  margin-bottom: 120px;
+}
+
+.map-list > li > ul > li {
+  margin-top: 30px;
+}
+.map-list > li > ul > li a {
+  color: #4A494F;
+  font-size: 22px;
+}
+
+.map-list > li > ul > li:first-child {
+  border: none;
+}
+
+.news-text-div {
+  margin-top: 67px;
+}
+.news-text-div .news-block__card_title {
+  min-height: auto;
+}
+.news-text-div .news-block__btn {
+  float: right;
+  position: static;
+  margin-top: 10px;
+}
+
+.img-div {
+  margin-top: 47px;
+}
+
+.prev, .next {
+  min-height: 43px;
+}
+
+.btn-back {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 13px 30px;
+  background-color: #1D7ABF;
+  color: #fff;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  margin-top: 32px;
+}
+.btn-back img {
+  margin-bottom: 4px;
+  margin-right: 15px;
+}
+
+.big-img {
+  max-height: 444px;
+  position: relative;
+}
+
+.open-news-title {
+  padding-top: 105px;
+}
+.open-news-title strong {
+  font-size: 32px;
+  line-height: 46px;
+}
+
+.news-open .news-block__date {
+  display: block;
+  margin-top: 35px;
+}
+
+.article {
+  font-size: 22px;
+  line-height: 37px;
+}
+
+.article:first-child {
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+
+.article:last-child {
+  margin-bottom: 120px;
 }
 
 @media only screen and (min-width: 1600px) {
@@ -731,6 +873,19 @@ h4, h5, h6 {
 
   .about-us__task-item {
     width: 90%;
+  }
+
+  .open-news-title {
+    padding-top: 60px;
+  }
+  .open-news-title strong {
+    font-size: 25px;
+    line-height: 40px;
+  }
+
+  .news-open .news-block__date {
+    display: block;
+    margin-top: 25px;
   }
 }
 @media only screen and (max-width: 1199.8px) {
@@ -792,6 +947,13 @@ h4, h5, h6 {
     min-width: 140px;
     height: 140px;
     margin: 25px 40px 25px 0;
+  }
+
+  .FAQ {
+    padding-bottom: 100px;
+  }
+  .FAQ__question {
+    font-size: 26px;
   }
 }
 @media only screen and (max-width: 991.8px) {
@@ -1033,11 +1195,28 @@ h4, h5, h6 {
     min-width: 100px;
     height: 100px;
   }
+
+  .FAQ {
+    padding-bottom: 60px;
+  }
+  .FAQ__item {
+    padding: 30px 0 25px;
+  }
+  .FAQ__item > p {
+    margin-bottom: 20px;
+  }
+  .FAQ__question {
+    font-size: 22px;
+    line-height: 34px;
+    margin-bottom: 25px;
+  }
 }
 @media only screen and (max-width: 575.8px) {
   .title-section {
     font-size: 24px;
     margin-bottom: 30px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .title-section > img {
     width: 32px;
@@ -1149,6 +1328,8 @@ h4, h5, h6 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    font-size: 18px;
+    line-height: 28px;
   }
   .footer__menu-item {
     width: 100%;
@@ -1175,6 +1356,48 @@ h4, h5, h6 {
     min-width: 120px;
     height: 120px;
     margin: 0 auto 14px;
+  }
+
+  .FAQ__question {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 374px) {
+  .title-section {
+    font-size: 20px;
+  }
+  .title-section > img {
+    width: 30px;
+  }
+}
+@media only screen and (max-width: 991.8px) {
+  .page-link span {
+    display: none;
+  }
+
+  .img-div > div {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .pagination li a {
+    font-size: 15px;
+    padding: .4rem .4rem;
+  }
+
+  .news-text-div .news-block__btn {
+    width: 170px;
+    height: 50px;
+    font-size: 18px;
+  }
+
+  .pagination li .prev, .pagination li .next {
+    min-height: 39px;
+    padding-top: 12px;
+  }
+
+  .btn-back {
+    font-size: 18px;
   }
 }
 

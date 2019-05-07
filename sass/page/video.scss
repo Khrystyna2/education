@@ -15,21 +15,21 @@
 .video-content {
     margin-top: 50px;
 }
-.pagination-nav {
-    margin-top: 120px;
-}
-.pagination {
-    justify-content: center;
 
+.pagination-nav{
+	margin:120px 0px ; 
+}
+.pagination{
+	justify-content: center;
     li {
         a {
-            font-family: Roboto;
+            font-family: 'Roboto', sans-serif;
             font-weight: bold;
             font-size: 20px;
             line-height: 23px;
             letter-spacing: 0.05em;
             text-transform: uppercase;
-            color: #ffffff;
+            color: $white;
             background-color: $blue;
             border: none;
             margin-right: 5px;
@@ -47,4 +47,8 @@
 .page-item:last-child .page-link,
 .page-item:first-child .page-link {
     border-radius: 0px;
+}
+.video-discr p{
+	font-size: 22px;
+	line-height: 32px;
 }
