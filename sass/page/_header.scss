@@ -114,6 +114,7 @@
         border: 1px solid $dark-gray;
         font-size: $fs;
         border-right: none;
+        @include border-radius(0);
         @include transition(width 0.5s ease);
         opacity: 0;
         &.open {
