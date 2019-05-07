@@ -15,11 +15,9 @@
 .video-content{
 	margin-top: 50px;
 }
-.container{
-	padding-bottom:120px;
-}
+
  .pagination-nav{
-	margin-top:120px; 
+	margin:120px 0px ; 
 }
 .pagination{
 	justify-content: center;
@@ -51,4 +49,8 @@
 	}
 .page-item:last-child .page-link, .page-item:first-child .page-link {	
 border-radius: 0px;
+}
+.video-discr p{
+	font-size: 22px;
+	line-height: 32px;
 }
