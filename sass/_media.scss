@@ -392,6 +392,7 @@
     .title-section {
         font-size: $fs + 4px;
         margin-bottom: 30px;
+        flex-wrap: wrap;
         >img {
             width: 32px;
         }

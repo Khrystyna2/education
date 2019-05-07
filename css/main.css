@@ -1080,6 +1080,8 @@ h4, h5, h6 {
   .title-section {
     font-size: 24px;
     margin-bottom: 30px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .title-section > img {
     width: 32px;
