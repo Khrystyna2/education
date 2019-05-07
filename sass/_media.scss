@@ -4,6 +4,7 @@
     }
 }
 
+
 @media only screen and (max-width: 1599.8px) {
     .about-project {
         &__title {
@@ -121,19 +122,18 @@
         }
     }
 
-
-.search {
-    width: 200px;
-    margin-right: 20px;
-    &__btn {
+    .search {
         width: 200px;
-    }
-    &__input {
-        &.open {
-            width: 410px;
+        margin-right: 20px;
+        &__btn {
+            width: 200px;
+        }
+        &__input {
+            &.open {
+                width: 410px;
+            }
         }
     }
-}
 
     .our-tasks {
         padding: 40px 0 65px;
@@ -162,6 +162,7 @@
             width: 210px;
         }
     }
+
 }
 
 @media only screen and (max-width: 767.8px) {

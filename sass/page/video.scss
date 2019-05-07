@@ -1,0 +1,50 @@
+.center-title {
+    margin-top: 37px;
+    margin-bottom: 0px;
+}
+
+.line-title {
+    height: 50px;
+    border-bottom: 1px solid $gray;
+    width: calc(100% - 30px);
+    max-width: initial;
+    margin: 0 auto;
+    flex: initial;
+    max-width: initial;
+}
+.video-content {
+    margin-top: 50px;
+}
+.pagination-nav {
+    margin-top: 120px;
+}
+.pagination {
+    justify-content: center;
+
+    li {
+        a {
+            font-family: Roboto;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 23px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #ffffff;
+            background-color: $blue;
+            border: none;
+            margin-right: 5px;
+            img {
+                margin-bottom: 3px;
+            }
+        }
+    }
+}
+.page-item.active .page-link {
+    background-color: transparent;
+    color: $black;
+    border: 1px solid $gray;
+}
+.page-item:last-child .page-link,
+.page-item:first-child .page-link {
+    border-radius: 0px;
+}
