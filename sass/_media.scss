@@ -3,3 +3,447 @@
         max-width: 1536px;
     }
 }
+
+
+@media only screen and (max-width: 1599.8px) {
+    .about-project {
+        &__title {
+            width: 100%;
+        }
+    }
+
+    .our-tasks {
+        &__card {
+            padding: 36px 40px;
+        }
+    }
+
+    .news-block {
+        &__text {
+            padding: 0;
+        }
+        &__card_title {
+            min-height: 130px;
+        }
+    }
+
+    .video-block {
+        &__desc {
+            padding: 10px 0 0 30px;
+        }
+    }
+    .footer {
+        &__menu-item {
+            width: 290px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1199.8px) {
+    body {
+        font-size: $fs - 2px;
+    }
+    .title-section {
+        font-size: $fs + 16px;
+    }
+    .menu {
+        padding: 50px 0;
+    }
+    .search {
+        &__input {
+            &.open {
+                width: 576px;
+            }
+        }
+    }
+
+    .news-block{
+        &__img {
+            height: 180px;
+            margin-bottom: 35px;
+        }
+        &__card_title {
+            font-size: $fs;
+        }
+    }
+
+    .video-block {
+        &__card {
+            flex-direction: column;
+        }
+        &__video {
+            width: 100%;
+            height: 260px;
+        }
+        &__desc {
+            width: 100%;
+            padding: 15px 20px 0;
+        }        
+        &__card_title {
+            font-size: $fs;
+        }
+    }
+
+    .our-partners {
+        &__card {
+            width: 25%;
+            max-width: 34%;
+        }
+    }
+}
+
+@media only screen and (max-width: 991.8px) {
+    .title-section {
+        font-size: $fs + 12px;
+    }
+    .menu{
+        &__item {
+            width: 290px;
+        }
+    }
+
+
+.search {
+    width: 200px;
+    margin-right: 20px;
+    &__btn {
+        width: 200px;
+    }
+    &__input {
+        &.open {
+            width: 410px;
+        }
+    }
+}
+
+    .our-tasks {
+        padding: 40px 0 65px;
+        &__title {
+            font-size: $fs + 6px;
+            line-height: $line-height;
+            margin-bottom: 40px;
+        }
+        &__card {
+            padding: 30px 20px;
+        }
+    }
+
+    .video-block {
+        &__video {
+            height: 190px;
+        }
+        &__desc {
+            width: 100%;
+            padding: 15px 10px 0;
+        }        
+    }
+
+    .footer {
+        &__menu-item {
+            width: 210px;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 767.8px) {
+    body {
+        font-size: $fs - 4px;
+        line-height: $line-height - 10px;
+    }
+
+    .title-section {
+        font-size: $fs + 6px;
+        line-height: $line-height + 4px;
+        margin-bottom: 35px;
+        >img {
+            width: 36px;
+            margin-right: 15px;
+        }
+    }
+
+    .header {
+        .logo {
+            width: 110px;
+        }
+    }
+    .menu {
+        padding: 35px 0;
+        &__btn {
+            font-size: $fs - 2px;
+            margin-left: 20px;
+            >span {
+                width: 34px;
+                height: 34px;
+            }
+        }
+        &__content {
+            flex-wrap: wrap;
+            text-align: center;
+        }
+        &__item {
+            font-size: $fs - 2px;
+            width: 100%;
+            li a {
+                padding: 14px 20px;
+            }
+            > li >ul {
+                font-size: $fs - 4px;
+            }
+        }
+    }
+    
+    .language {
+        font-size: $fs - 4px;
+        &__item {
+            border: 2px solid transparent;
+        }
+    }
+    
+    .search {
+        height: 50px;
+        width: 160px;
+        margin-right: 15px;
+        &__btn {
+            width: 160px;
+            >img {
+                margin-right: 10px;
+            }
+        }
+        &__input {
+            height: 50px;
+            &.open {
+                width: 270px;
+            }
+        }
+    }
+
+    .about-project {
+        padding-bottom: 60px;
+        &__img {
+            margin-bottom: 40px;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        &__title {
+            margin: 0 auto 40px;
+        }
+    }
+
+    .our-tasks {
+        padding: 30px 0 35px;
+        &__title {
+            font-size: $fs + 2px;
+            line-height: $line-height;
+            margin-bottom: 30px;
+        }
+        &__card {
+            padding: 26px 14px;
+            border-width: 8px;
+            margin-bottom: 20px;
+            height: auto;
+        }
+        &__img {
+            width: 90px;
+            margin: 0 auto 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid $black;
+        }
+    }
+
+    .news-block {
+        &__img {
+            height: 248px;
+            margin-bottom: 35px;
+        }
+        &__card{
+            margin-bottom: 30px;
+        }
+        &__text {
+            padding: 0 16px;
+            >p {
+                max-height: 100px;
+            }
+        }
+        &__card_title {
+            margin-bottom: 15px;
+            min-height: 100%;
+            font-size: $fs - 2px;
+            line-height: $line-height - 6px
+        }
+    }
+    
+    .video-block {
+        &__card {
+            margin-bottom: 20px;
+        }
+        &__video {
+            height: 140px;
+        }
+        &__desc {
+            padding: 15px 0 0;
+        }
+        &__card_title {
+            font-size: $fs - 2px;
+            line-height: $line-height - 6px
+        }
+    }
+    
+    .our-partners {
+        padding: 60px 0;
+        &__card {
+            width: 46%;
+            max-width: 50%;
+            margin: 0 10px 26px;
+        }
+    }
+
+    .footer {
+        padding: 30px 0;
+        p {
+            font-size: $fs - 6px;
+            line-height: $line-height - 8px;
+        }
+        &__menu {
+            margin-bottom: 34px;
+        }
+        &__menu-item {
+            width: 44%;
+            li {
+                margin-bottom: 14px;
+                >ul {
+                    margin-top: 14px;
+                }
+            }
+        }
+        &__logo {
+            width: 140px;
+            margin: 0 auto 26px;
+        }
+        .social-icon {
+            margin-top: 30px;
+        }
+    }
+}
+
+@media only screen and (max-width: 575.8px) {
+    .title-section {
+        font-size: $fs + 4px;
+        margin-bottom: 30px;
+        >img {
+            width: 32px;
+        }
+    }
+
+    .header {
+        .logo {
+            margin-bottom: 16px;
+        }
+        &__nav {
+            flex-direction: column;
+        }
+        &__group {
+            width: 100%;
+        }
+    }
+
+    .menu {
+        &__btn {
+            font-size: $fs - 6px;
+            margin-left: 10px;
+            >span {
+                width: 28px;
+                height: 28px;
+            }
+        }
+        
+        &__item {
+            font-size: $fs - 4px;
+            li a {
+                padding: 10px 20px;
+            }
+        }
+    }
+    
+    .language {
+        font-size: $fs - 6px;
+    }
+    
+    .search {
+        height: 50px;
+        width: 100%;
+        margin-right: 0;
+        &__btn {
+            width: 20%;
+            >img {
+                margin-right: 0;
+            }
+            >span {
+                display: none;
+            }
+        }
+        &__input {
+            position: static;
+            right: 0;
+            opacity: 1;
+            height: 50px;
+            width: 80%;
+            padding: 0 22px;
+            &.open {
+                width: 80%;
+            }
+        }
+    }
+
+    #plugin {
+        width: 48px;
+        position: fixed;
+        top: 34px;
+        right: 12px;
+        z-index: 101;
+        &.fixed {
+            @include animate(animateNone 0.5s ease);
+        }
+    }
+
+    @keyframes animateNone {
+        0%{
+            @include transform(translateY(0%));
+        }
+    }
+
+    .news-block {
+        &__img {
+            height: 200px;
+        }
+    }
+    
+    .video-block {
+        &__video {
+            height: 200px;
+        }
+    }
+
+    .our-partners {
+        &__card {
+            width: 40%;
+        }
+    }
+
+    .footer {
+        &__menu {
+            flex-direction: column;
+        }
+        &__menu-item {
+            width: 100%;
+            li {
+                margin-bottom: 14px;
+                >ul {
+                    margin-top: 14px;
+                }
+            }
+        }
+    }
+
+}
