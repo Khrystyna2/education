@@ -110,6 +110,12 @@
             margin: 25px 40px 25px 0;
         }
     }
+    .FAQ {
+        padding-bottom: 100px;
+        &__question {
+            font-size: $fs + 6px;
+        }
+    }
 }
 
 @media only screen and (max-width: 991.8px) {
@@ -365,6 +371,21 @@
             height: 100px;
         }
     }
+
+    .FAQ {
+        padding-bottom: 60px;
+        &__item {
+            padding: 30px 0 25px;
+            >p {
+                margin-bottom: 20px;
+            }
+        }
+        &__question {
+            font-size: $fs + 2px;
+            line-height: $line-height;
+            margin-bottom: 25px;
+        }
+    }
 }
 
 @media only screen and (max-width: 575.8px) {
@@ -474,6 +495,8 @@
     .footer {
         &__menu {
             flex-direction: column;
+            font-size: $fs - 2px;
+            line-height: $line-height - 6px;
         }
         &__menu-item {
             width: 100%;
@@ -501,6 +524,20 @@
             min-width: 120px;
             height: 120px;
             margin: 0 auto 14px;
+        }
+    }
+    .FAQ {
+        &__question {
+            font-size: $fs;
+        }
+    }
+}
+
+@media only screen and (max-width: 374px) {
+    .title-section {
+        font-size: $fs;
+        >img {
+            width: 30px;
         }
     }
 }

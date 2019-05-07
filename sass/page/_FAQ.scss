@@ -1,0 +1,19 @@
+.FAQ {
+    padding-bottom: 120px;
+    &__item {
+        border-top: 1px solid $gray;
+        padding: 40px 0 35px;
+        >p {
+            color: $dark-gray;
+            margin-bottom: 30px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &__question {
+        font-size: $fs + 8px;
+        line-height: $line-height + 3px;
+        margin-bottom: 35px;
+    }
+}
