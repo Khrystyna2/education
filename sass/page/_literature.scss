@@ -1,10 +1,10 @@
-.list-of-literature li span {
-	font-size: $fs + 4px;
-	line-height: $line-height - 5px;
-}
-.list-of-literature li {
-	margin-top: 45px;
-}
 .list-of-literature{
 	margin-bottom: 120px;
+	li {
+		margin-top: 45px;
+		span {
+			font-size: $fs + 4px;
+			line-height: $line-height - 5px;
+		}
+	}
 }
