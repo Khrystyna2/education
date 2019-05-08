@@ -364,6 +364,9 @@
             margin-top: 30px;
         }
     }
+
+   
+
     .about-us {
         &__banner {
             background: $blue ;
@@ -398,6 +401,9 @@
             margin-bottom: 25px;
         }
     }
+    .news-text-div {
+        margin-top: 30px;
+        }
 }
 
 @media only screen and (max-width: 575.8px) {
@@ -553,6 +559,7 @@
             width: 30px;
         }
     }
+
 }
 @media only screen and (max-width: 991.8px) {
 	.page-link span {
