@@ -86,16 +86,6 @@ h4, h5, h6 {
   font-weight: 700;
 }
 
-.fs-22 {
-  font-size: 22px;
-  line-height: 32px;
-}
-
-.fs-42 {
-  font-size: 42px;
-  line-height: 51px;
-}
-
 .overflow {
   overflow: hidden;
   width: 100%;
@@ -625,6 +615,101 @@ h4, h5, h6 {
   margin-bottom: 35px;
 }
 
+.feedback {
+  position: relative;
+  padding-bottom: 54px;
+  border-bottom: 3px solid #C4C4C4;
+}
+.feedback::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #F6F6F6;
+  height: 362px;
+  z-index: -1;
+}
+.feedback__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.feedback__social-link {
+  margin-bottom: 150px;
+}
+.feedback__social-link > p {
+  margin-bottom: 20px;
+}
+.feedback__form {
+  background-color: #fff;
+  padding: 56px 132px;
+  -webkit-box-shadow: 0px 4px 84px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 4px 84px rgba(0, 0, 0, 0.05);
+  border-top: 11px solid #1D7ABF;
+  height: 100%;
+}
+.feedback__form > h4 {
+  font-size: 32px;
+  line-height: 46px;
+  margin-bottom: 60px;
+}
+.feedback__form .form-group {
+  margin-bottom: 15px;
+}
+.feedback__form .form-group label {
+  padding-left: 10px;
+  font-size: 18px;
+  color: #4A494F;
+  margin-bottom: 6px;
+}
+.feedback__form .form-group .form-control {
+  width: 354px;
+  line-height: normal;
+  color: #000;
+  border: 1px solid #4A494F;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  height: 40px;
+}
+.feedback__form .form-group .form-control_textarea {
+  width: 100%;
+  height: auto;
+}
+.feedback__btn-send {
+  margin-top: 35px;
+}
+
+.contacts {
+  width: 100%;
+}
+.contacts__item {
+  margin-bottom: 50px;
+}
+.contacts__item > span {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.contacts__item > span img {
+  margin-right: 15px;
+}
+.contacts__item > a,
+.contacts__item > p {
+  font-size: 24px;
+  line-height: normal;
+  color: #000;
+}
+
 .footer {
   padding: 50px 0;
   background-color: #F6F6F6;
@@ -884,6 +969,14 @@ h4, h5, h6 {
   .video-discr {
     padding: 30px 10px 0;
   }
+
+  .feedback__form {
+    padding: 46px 82px;
+    height: 100%;
+  }
+  .feedback__form > h4 {
+    margin-bottom: 50px;
+  }
 }
 @media only screen and (max-width: 1199.8px) {
   body {
@@ -973,6 +1066,23 @@ h4, h5, h6 {
   .map-list {
     margin-bottom: 100px;
   }
+
+  .feedback__form {
+    padding: 46px 60px;
+  }
+  .feedback__form > h4 {
+    font-size: 28px;
+    line-height: 42px;
+    margin-bottom: 50px;
+  }
+  .feedback__form .form-group .form-control {
+    width: 100%;
+  }
+
+  .contacts__item > a,
+  .contacts__item > p {
+    font-size: 22px;
+  }
 }
 @media only screen and (max-width: 991.8px) {
   .title-section {
@@ -1016,6 +1126,14 @@ h4, h5, h6 {
 
   .footer__menu-item {
     width: 210px;
+  }
+
+  .page-link span {
+    display: none;
+  }
+
+  .img-div > div {
+    text-align: center;
   }
 }
 @media only screen and (max-width: 767.8px) {
@@ -1243,6 +1361,19 @@ h4, h5, h6 {
   .map-list {
     margin-bottom: 60px;
   }
+
+  .feedback {
+    padding-bottom: 40px;
+  }
+  .feedback::after {
+    height: 500px;
+  }
+  .feedback__contacts {
+    margin-top: 40px;
+  }
+  .feedback__social-link {
+    margin-bottom: 0;
+  }
 }
 @media only screen and (max-width: 575.8px) {
   .title-section {
@@ -1398,6 +1529,18 @@ h4, h5, h6 {
   .video-discr p {
     font-size: 18px;
   }
+
+  .feedback__form {
+    padding: 36px 20px;
+  }
+  .feedback__form > h4 {
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 40px;
+  }
+  .feedback__btn-send {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 374px) {
   .title-section {
@@ -1405,15 +1548,6 @@ h4, h5, h6 {
   }
   .title-section > img {
     width: 30px;
-  }
-}
-@media only screen and (max-width: 991.8px) {
-  .page-link span {
-    display: none;
-  }
-
-  .img-div > div {
-    text-align: center;
   }
 }
 @media only screen and (max-width: 500px) {

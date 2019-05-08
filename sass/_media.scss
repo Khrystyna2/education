@@ -63,6 +63,16 @@
     .video-discr { 
         padding: 30px 10px 0;
     }
+
+    .feedback {
+        &__form {
+            padding: 46px 82px;
+            height: 100%;
+            >h4 {
+                margin-bottom: 50px;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 1199.8px) {
@@ -156,6 +166,31 @@
     .map-list {
         margin-bottom: 100px;
     }
+
+    .feedback {
+        &__form {
+            padding: 46px 60px;
+            >h4 {
+                font-size: $fs + 8px;
+                line-height: $line-height + 8px;
+                margin-bottom: 50px;
+            }
+            .form-group {
+                .form-control {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    
+    .contacts {
+        &__item {
+            >a,
+            >p {
+                font-size: $fs + 2px;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 991.8px) {
@@ -207,6 +242,13 @@
         &__menu-item {
             width: 210px;
         }
+    }
+
+    .page-link span {
+		display: none;
+    }
+    .img-div> div {
+        text-align: center;
     }
 
 }
@@ -443,6 +485,19 @@
     .map-list {
         margin-bottom: 60px;
     }
+
+    .feedback {
+        padding-bottom: 40px;
+        &::after {
+            height: 500px;
+        }
+        &__contacts {
+           margin-top: 40px;
+        }
+        &__social-link {
+            margin-bottom: 0;
+        }
+    }
 }
 
 @media only screen and (max-width: 575.8px) {
@@ -595,6 +650,20 @@
             font-size: $fs - 2px;
         }
     }
+
+    .feedback {
+        &__form {
+            padding: 36px 20px;
+            >h4 {
+                font-size: $fs + 4px;
+                line-height: $line-height;
+                margin-bottom: 40px;
+            }
+        }
+        &__btn-send {
+            width: 100%;
+        }
+    }
 }
 
 @media only screen and (max-width: 374px) {
@@ -606,14 +675,7 @@
     }
 
 }
-@media only screen and (max-width: 991.8px) {
-	.page-link span {
-		display: none;
-    }
-    .img-div> div {
-        text-align: center;
-    }
-}
+
 @media only screen and (max-width: 500px) {
 	.pagination li a   {
 		font-size: 15px;
