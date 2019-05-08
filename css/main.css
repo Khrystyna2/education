@@ -103,6 +103,7 @@ h4, h5, h6 {
 }
 
 .title-section {
+  position: relative;
   color: #000;
   font-size: 42px;
   line-height: 51px;
@@ -120,6 +121,11 @@ h4, h5, h6 {
 .title-section > img {
   width: 50px;
   margin-right: 25px;
+}
+
+.line-title {
+  width: 100%;
+  border-bottom: 1px solid #C4C4C4;
 }
 
 .social-icon > a {
@@ -654,23 +660,6 @@ h4, h5, h6 {
   max-width: 100%;
 }
 
-.center-title {
-  margin-top: 37px;
-  margin-bottom: 0px;
-}
-
-.line-title {
-  height: 50px;
-  border-bottom: 1px solid #C4C4C4;
-  width: calc(100% - 30px);
-  max-width: initial;
-  margin: 0 auto;
-  -webkit-box-flex: initial;
-      -ms-flex: initial;
-          flex: initial;
-  max-width: initial;
-}
-
 .video-content {
   margin-top: 50px;
 }
@@ -685,7 +674,7 @@ h4, h5, h6 {
           justify-content: center;
 }
 .pagination li a {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 20px;
   line-height: 23px;
@@ -711,6 +700,9 @@ h4, h5, h6 {
   border-radius: 0px;
 }
 
+.video-discr {
+  padding: 30px 20px;
+}
 .video-discr p {
   font-size: 22px;
   line-height: 32px;
@@ -787,7 +779,8 @@ h4, h5, h6 {
   margin-top: 47px;
 }
 
-.prev, .next {
+.prev,
+.next {
   min-height: 43px;
 }
 
@@ -832,12 +825,10 @@ h4, h5, h6 {
   font-size: 22px;
   line-height: 37px;
 }
-
 .article:first-child {
   margin-top: 80px;
   margin-bottom: 60px;
 }
-
 .article:last-child {
   margin-bottom: 120px;
 }
@@ -1400,4 +1391,5 @@ h4, h5, h6 {
     font-size: 18px;
   }
 }
+
 /*# sourceMappingURL=main.css.map */
