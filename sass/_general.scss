@@ -92,6 +92,7 @@ h4, h5, h6 {
 }
 
 .title-section {
+    position: relative;
     color: $black;
     font-size: $fs + 22px;
     line-height: $line-height + 17px;
@@ -103,6 +104,10 @@ h4, h5, h6 {
         width: 50px;
         margin-right: 25px;
     }
+}
+.line-title {
+    width: 100%;
+    border-bottom: 1px solid $gray;
 }
 
 .social-icon {
