@@ -625,6 +625,22 @@ h4, h5, h6 {
   margin-bottom: 35px;
 }
 
+.feedback {
+  position: relative;
+  padding-bottom: 54px;
+  border-bottom: 3px solid #C4C4C4;
+}
+.feedback::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #F6F6F6;
+  height: 362px;
+  z-index: -1;
+}
+
 .footer {
   padding: 50px 0;
   background-color: #F6F6F6;

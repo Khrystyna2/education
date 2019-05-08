@@ -1,0 +1,15 @@
+.feedback {
+    position: relative;
+    padding-bottom: 54px;
+    border-bottom: 3px solid $gray;
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: $ligth-gray;
+        height: 362px;
+        z-index: -1;
+    }
+}
