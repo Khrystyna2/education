@@ -675,7 +675,7 @@ h4, h5, h6 {
 }
 .pagination li a {
   font-family: "Roboto", sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
   line-height: 23px;
   letter-spacing: 0.05em;
@@ -701,24 +701,22 @@ h4, h5, h6 {
 }
 
 .video-discr {
-  padding: 30px 20px;
+  padding: 30px 20px 0;
 }
 .video-discr p {
   font-size: 22px;
   line-height: 32px;
 }
 
-.list-of-literature li span {
-  font-size: 24px;
-  line-height: 29px;
+.list-of-literature {
+  margin-bottom: 120px;
 }
-
 .list-of-literature li {
   margin-top: 45px;
 }
-
-.list-of-literature {
-  margin-bottom: 120px;
+.list-of-literature li span {
+  font-size: 24px;
+  line-height: 29px;
 }
 
 .map-list > li {
@@ -878,6 +876,14 @@ h4, h5, h6 {
     display: block;
     margin-top: 25px;
   }
+
+  .video-content {
+    margin-top: 40px;
+  }
+
+  .video-discr {
+    padding: 30px 10px 0;
+  }
 }
 @media only screen and (max-width: 1199.8px) {
   body {
@@ -945,6 +951,27 @@ h4, h5, h6 {
   }
   .FAQ__question {
     font-size: 26px;
+  }
+
+  .video-discr {
+    padding: 20px 0 0;
+  }
+  .video-discr p {
+    font-size: 20px;
+  }
+
+  .list-of-literature {
+    margin-bottom: 80px;
+  }
+  .list-of-literature li {
+    margin-top: 35px;
+  }
+  .list-of-literature li span {
+    font-size: 22px;
+  }
+
+  .map-list {
+    margin-bottom: 100px;
   }
 }
 @media only screen and (max-width: 991.8px) {
@@ -1205,6 +1232,17 @@ h4, h5, h6 {
   .news-text-div {
     margin-top: 30px;
   }
+
+  .list-of-literature {
+    margin-bottom: 60px;
+  }
+  .list-of-literature li span {
+    font-size: 20px;
+  }
+
+  .map-list {
+    margin-bottom: 60px;
+  }
 }
 @media only screen and (max-width: 575.8px) {
   .title-section {
@@ -1355,6 +1393,10 @@ h4, h5, h6 {
 
   .FAQ__question {
     font-size: 20px;
+  }
+
+  .video-discr p {
+    font-size: 18px;
   }
 }
 @media only screen and (max-width: 374px) {
