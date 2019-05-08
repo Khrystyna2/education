@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="css/main.css" />
     </head>
 
-     <body>
+    <body>
         <!-- header start -->
         <header class="header">
             <div class="container">
@@ -34,21 +34,23 @@
                         <div class="d-flex justify-content-end align-items-center">
                             <form class="search">
                                 <input type="search" class="search__input" />
-                                <span class="search__btn"><img src="icons/magnifying-glass.svg" alt="magnifying-glass" />пошук</span>
+                                <div class="search__btn">
+                                    <img src="icons/magnifying-glass.svg" alt="magnifying-glass" /><span>пошук</span>
+                                </div>
                             </form>
-                            <a href="#"><img src="icons/btn.png" alt=""/></a>
+                            <div id="plugin"><img src="icons/btn.png" alt="" /></div>
                         </div>
                     </div>
                     <div class="menu">
                         <div class="menu__content d-flex justify-content-around">
                             <ul class="menu__item">
-                                <li><a href="#">Головна</a></li>
-                                <li><a href="#">Про нас</a></li>
+                                <li><a href="index.html">Головна</a></li>
+                                <li><a href="about-us.html">Про нас</a></li>
                                 <li><a href="#">Онлайн модулі</a></li>
                                 <li><a href="#">Курси для вчителів і студентів</a></li>
                                 <li><a href="#">Всеукраїнський консорціум з інклюзивної освіти</a></li>
                                 <li><a href="#">Ефективні інклюзивні практики</a></li>
-                                <li><a href="#">Питання - відповіді</a></li>
+                                <li><a href="FAQ.html">Питання - відповіді</a></li>
                                 <li><a href="#">Корисна інформація для батьків</a></li>
                             </ul>
                             <ul class="menu__item">
@@ -56,13 +58,13 @@
                                     <a href="#">Бібліотека</a>
                                     <ul>
                                         <li><a href="#">Нормативно-правова база</a></li>
-                                        <li><a href="#">Тематична література</a></li>
-                                        <li><a href="#">Кінотека</a></li>
+                                        <li><a href="literature.html">Тематична література</a></li>
+                                        <li><a href="video-page.html">Кінотека</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="#">Фотогалерея</a></li>
-                                <li><a href="#">Новини</a></li>
-                                <li><a href="#">Мапа сайту</a></li>
+                                <li><a href="news.html">Новини</a></li>
+                                <li><a href="map.html">Мапа сайту</a></li>
                                 <li><a href="#">Зворотній зв’язок</a></li>
                             </ul>
                         </div>
@@ -70,23 +72,21 @@
                 </nav>
             </div>
         </header>
-        <main>
-    
-         <div class="container">
-            <h2 class="title-section center-title"><img src="icons/newspaper.svg" alt="book" />Новини</h2> 
-    
-            <div class="row">
-                <div class="col-12 line-title"></div>
-                 <div class="col-12">
-                     <div class="row">
+        <!-- header end -->
 
-                            <div class="col-lg-4 img-div align-self-center">
+        <main>
+            <div class="container">
+                <h2 class="title-section mt-4"><img src="icons/newspaper.svg" alt="book" />Новини</h2>
+                <div class="line-title"></div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-lg-4 img-div">
                                 <div>
-                                   <img src="image/news/chrome_2019-04-08_15-49-42.png" alt="">
+                                    <img src="image/news/chrome_2019-04-08_15-49-42.png" alt="" />
                                 </div>
                             </div>
                             <div class="col-lg-8 news-text-div">
-                                        
                                 <a href="#" class="news-block__card_title">
                                     День другий «Світ людей «А»» - тижня Толерантності та інклюзії - був присвячений темі РАС
                                 </a>
@@ -97,227 +97,185 @@
                                 <span class="news-block__date">06.03.2019</span>
                                 <a href="">
                                 <span class="btn-blue news-block__btn"
-                                >детальніше <img src="icons/double-arrow.svg" alt="double-arrow"
-                                /></span>
-                                </a>            
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-4 img-div align-self-center">
-                                    <div>
-                                       <img src="image/news/chrome_2019-04-08_15-49-42.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-lg-8 news-text-div">
-                                            
-                                    <a href="#" class="news-block__card_title">
-                                        День другий «Світ людей «А»» - тижня Толерантності та інклюзії - був присвячений темі РАС
-                                    </a>
-                                    <p>
-                                        Педагоги м. Львова мали можливіть поспілкуватись з педагогом практиком, вчителем-логопедом НРЦ
-                                        «Довіра»...
-                                    </p>
-                                    <span class="news-block__date">06.03.2019</span>
-                                    <a href="">
-                                    <span class="btn-blue news-block__btn"
                                     >детальніше <img src="icons/double-arrow.svg" alt="double-arrow"
-                                    /></span>
-                                    </a>           
+                                /></span>
+                            </div>
+                            <div class="col-lg-4 img-div">
+                                <div>
+                                    <img src="image/news/chrome_2019-04-08_15-49-42.png" alt="" />
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-lg-4 img-div align-self-center">
-                                        <div>
-                                           <img src="image/news/chrome_2019-04-08_15-49-42.png" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-8 news-text-div">
-                                                
-                                        <a href="#" class="news-block__card_title">
-                                            День другий «Світ людей «А»» - тижня Толерантності та інклюзії - був присвячений темі РАС
-                                        </a>
-                                        <p>
-                                            Педагоги м. Львова мали можливіть поспілкуватись з педагогом практиком, вчителем-логопедом НРЦ
-                                            «Довіра»...
-                                        </p>
-                                        <span class="news-block__date">06.03.2019</span>
-                                        <a href="">
-                                        <span class="btn-blue news-block__btn"
-                                        >детальніше <img src="icons/double-arrow.svg" alt="double-arrow"
-                                        /></span>
-                                        </a>
-                                                    
-                                    </div>
+                            <div class="col-lg-8 news-text-div">
+                                <a href="#" class="news-block__card_title">
+                                    День другий «Світ людей «А»» - тижня Толерантності та інклюзії - був присвячений темі РАС
+                                </a>
+                                <p>
+                                    Педагоги м. Львова мали можливіть поспілкуватись з педагогом практиком, вчителем-логопедом НРЦ
+                                    «Довіра»...
+                                </p>
+                                <span class="news-block__date">06.03.2019</span>
+                                <span class="btn-blue news-block__btn"
+                                    >детальніше <img src="icons/double-arrow.svg" alt="double-arrow"
+                                /></span>
+                            </div>
+                            <div class="col-lg-4 img-div">
+                                <div>
+                                    <img src="image/news/chrome_2019-04-08_15-49-42.png" alt="" />
                                 </div>
-                                <div class="row">
-                                    <div class="col-lg-4 img-div align-self-center">
-                                            <div>
-                                               <img src="image/news/chrome_2019-04-08_15-49-42.png" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-8 news-text-div">
-                                                    
-                                            <a href="#" class="news-block__card_title">
-                                                День другий «Світ людей «А»» - тижня Толерантності та інклюзії - був присвячений темі РАС
-                                            </a>
-                                            <p>
-                                                Педагоги м. Львова мали можливіть поспілкуватись з педагогом практиком, вчителем-логопедом НРЦ
-                                                «Довіра»...
-                                            </p>
-                                            <span class="news-block__date">06.03.2019</span>
-                                            <a href="">
-                                            <span class="btn-blue news-block__btn"
-                                            >детальніше <img src="icons/double-arrow.svg" alt="double-arrow"
-                                            /></span>
-                                            </a>
-                                                        
-                                        </div>
-                                      </div>
-                                      <div class="row">  
-                                        <div class="col-lg-4 img-div align-self-center">
-                                                <div>
-                                                   <img src="image/news/chrome_2019-04-08_15-49-42.png" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-8 news-text-div">
-                                                        
-                                                <a href="#" class="news-block__card_title">
-                                                    День другий «Світ людей «А»» - тижня Толерантності та інклюзії - був присвячений темі РАС
-                                                </a>
-                                                <p>
-                                                    Педагоги м. Львова мали можливіть поспілкуватись з педагогом практиком, вчителем-логопедом НРЦ
-                                                    «Довіра»...
-                                                </p>
-                                                <span class="news-block__date">06.03.2019</span>
-                                                <a href="">
-                                                <span class="btn-blue news-block__btn"
-                                                >детальніше <img src="icons/double-arrow.svg" alt="double-arrow"
-                                                /></span>
-                                                 </a>           
-                                            </div>
-                                       </div>
-                                       <div class="row">     
-                                            <div class="col-lg-4 img-div align-self-center">
-                                                    <div>
-                                                       <img src="image/news/chrome_2019-04-08_15-49-42.png" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-8 news-text-div">
-                                                            
-                                                    <a href="#" class="news-block__card_title">
-                                                        День другий «Світ людей «А»» - тижня Толерантності та інклюзії - був присвячений темі РАС
-                                                    </a>
-                                                    <p>
-                                                        Педагоги м. Львова мали можливіть поспілкуватись з педагогом практиком, вчителем-логопедом НРЦ
-                                                        «Довіра»...
-                                                    </p>
-                                                    <span class="news-block__date">06.03.2019</span>
-                                                    <a href="">
-                                                    <span class="btn-blue news-block__btn"
-                                                    >детальніше <img src="icons/double-arrow.svg" alt="double-arrow"
-                                                    /></span>
-                                                    </a>
-                                                                
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-lg-4 img-div align-self-center">
-                                                        <div>
-                                                           <img src="image/news/chrome_2019-04-08_15-49-42.png" alt="">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-8 news-text-div">
-                                                                
-                                                        <a href="#" class="news-block__card_title">
-                                                            День другий «Світ людей «А»» - тижня Толерантності та інклюзії - був присвячений темі РАС
-                                                        </a>
-                                                        <p>
-                                                            Педагоги м. Львова мали можливіть поспілкуватись з педагогом практиком, вчителем-логопедом НРЦ
-                                                            «Довіра»...
-                                                        </p>
-                                                        <span class="news-block__date">06.03.2019</span>
-                                                        <a href="">
-                                                        <span class="btn-blue news-block__btn"
-                                                        >детальніше <img src="icons/double-arrow.svg" alt="double-arrow"
-                                                        /></span>
-                                                        </a>
-                                                                    
-                                                    </div>
-                                                </div>  
-                                                <div class="row">  
-                                                    <div class="col-lg-4 img-div align-self-center">
-                                                            <div>
-                                                               <img src="image/news/chrome_2019-04-08_15-49-42.png" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-8 news-text-div">
-                                                                    
-                                                            <a href="#" class="news-block__card_title">
-                                                                День другий «Світ людей «А»» - тижня Толерантності та інклюзії - був присвячений темі РАС
-                                                            </a>
-                                                            <p>
-                                                                Педагоги м. Львова мали можливіть поспілкуватись з педагогом практиком, вчителем-логопедом НРЦ
-                                                                «Довіра»...
-                                                            </p>
-                                                            <span class="news-block__date">06.03.2019</span>
-                                                            <a href="">
-                                                            <span class="btn-blue news-block__btn"
-                                                            >детальніше <img src="icons/double-arrow.svg" alt="double-arrow"
-                                                            /></span>
-                                                            </a>
-                                                                        
-                                                        </div>
-                                                    </div>
-                         
-                        <!-- pagination    -->
-                        <div class="col-12">
-                                <nav  class="pagination-nav"role="navigation" aria-label="Pagination Navigation">
-                                     <ul class="pagination">
-                                         <li class="page-item ">
-                                           <a class="page-link prev" aria-label="Goto Previous Page" class="page-link" href="#" >
-                                               <img src="icons/arrow-point-to-right (2).svg" alt="">
+                            </div>
+                            <div class="col-lg-8 news-text-div">
+                                <a href="#" class="news-block__card_title">
+                                    День другий «Світ людей «А»» - тижня Толерантності та інклюзії - був присвячений темі РАС
+                                </a>
+                                <p>
+                                    Педагоги м. Львова мали можливіть поспілкуватись з педагогом практиком, вчителем-логопедом НРЦ
+                                    «Довіра»...
+                                </p>
+                                <span class="news-block__date">06.03.2019</span>
+                                <span class="btn-blue news-block__btn"
+                                    >детальніше <img src="icons/double-arrow.svg" alt="double-arrow"
+                                /></span>
+                            </div>
+                            <div class="col-lg-4 img-div">
+                                <div>
+                                    <img src="image/news/chrome_2019-04-08_15-49-42.png" alt="" />
+                                </div>
+                            </div>
+                            <div class="col-lg-8 news-text-div">
+                                <a href="#" class="news-block__card_title">
+                                    День другий «Світ людей «А»» - тижня Толерантності та інклюзії - був присвячений темі РАС
+                                </a>
+                                <p>
+                                    Педагоги м. Львова мали можливіть поспілкуватись з педагогом практиком, вчителем-логопедом НРЦ
+                                    «Довіра»...
+                                </p>
+                                <span class="news-block__date">06.03.2019</span>
+                                <span class="btn-blue news-block__btn"
+                                    >детальніше <img src="icons/double-arrow.svg" alt="double-arrow"
+                                /></span>
+                            </div>
+                            <div class="col-lg-4 img-div">
+                                <div>
+                                    <img src="image/news/chrome_2019-04-08_15-49-42.png" alt="" />
+                                </div>
+                            </div>
+                            <div class="col-lg-8 news-text-div">
+                                <a href="#" class="news-block__card_title">
+                                    День другий «Світ людей «А»» - тижня Толерантності та інклюзії - був присвячений темі РАС
+                                </a>
+                                <p>
+                                    Педагоги м. Львова мали можливіть поспілкуватись з педагогом практиком, вчителем-логопедом НРЦ
+                                    «Довіра»...
+                                </p>
+                                <span class="news-block__date">06.03.2019</span>
+                                <span class="btn-blue news-block__btn"
+                                    >детальніше <img src="icons/double-arrow.svg" alt="double-arrow"
+                                /></span>
+                            </div>
+                            <div class="col-lg-4 img-div">
+                                <div>
+                                    <img src="image/news/chrome_2019-04-08_15-49-42.png" alt="" />
+                                </div>
+                            </div>
+                            <div class="col-lg-8 news-text-div">
+                                <a href="#" class="news-block__card_title">
+                                    День другий «Світ людей «А»» - тижня Толерантності та інклюзії - був присвячений темі РАС
+                                </a>
+                                <p>
+                                    Педагоги м. Львова мали можливіть поспілкуватись з педагогом практиком, вчителем-логопедом НРЦ
+                                    «Довіра»...
+                                </p>
+                                <span class="news-block__date">06.03.2019</span>
+                                <span class="btn-blue news-block__btn"
+                                    >детальніше <img src="icons/double-arrow.svg" alt="double-arrow"
+                                /></span>
+                            </div>
+                            <div class="col-lg-4 img-div">
+                                <div>
+                                    <img src="image/news/chrome_2019-04-08_15-49-42.png" alt="" />
+                                </div>
+                            </div>
+                            <div class="col-lg-8 news-text-div">
+                                <a href="#" class="news-block__card_title">
+                                    День другий «Світ людей «А»» - тижня Толерантності та інклюзії - був присвячений темі РАС
+                                </a>
+                                <p>
+                                    Педагоги м. Львова мали можливіть поспілкуватись з педагогом практиком, вчителем-логопедом НРЦ
+                                    «Довіра»...
+                                </p>
+                                <span class="news-block__date">06.03.2019</span>
+                                <span class="btn-blue news-block__btn"
+                                    >детальніше <img src="icons/double-arrow.svg" alt="double-arrow"
+                                /></span>
+                            </div>
+                            <div class="col-lg-4 img-div">
+                                <div>
+                                    <img src="image/news/chrome_2019-04-08_15-49-42.png" alt="" />
+                                </div>
+                            </div>
+                            <div class="col-lg-8 news-text-div">
+                                <a href="#" class="news-block__card_title">
+                                    День другий «Світ людей «А»» - тижня Толерантності та інклюзії - був присвячений темі РАС
+                                </a>
+                                <p>
+                                    Педагоги м. Львова мали можливіть поспілкуватись з педагогом практиком, вчителем-логопедом НРЦ
+                                    «Довіра»...
+                                </p>
+                                <span class="news-block__date">06.03.2019</span>
+                                <span class="btn-blue news-block__btn"
+                                    >детальніше <img src="icons/double-arrow.svg" alt="double-arrow"
+                                /></span>
+                            </div>
+
+                            <!-- pagination    -->
+                            <div class="col-12">
+                                <nav class="pagination-nav" role="navigation" aria-label="Pagination Navigation">
+                                    <ul class="pagination">
+                                        <li class="page-item ">
+                                            <a class="page-link prev" aria-label="Goto Previous Page" class="page-link" href="#">
+                                                <img src="icons/arrow-point-to-right (2).svg" alt="" />
                                                 <span> Попередня </span>
                                             </a>
-                                         </li>
-                                         <li class="page-item">
-                                             <a class="page-link" href="/page-1" aria-label="Goto Page 1">1</a>
-                                         </li>
-                                         <li class="page-item active">
-                                             <a class="page-link" href="/page-2" aria-label="Goto Page 2">2</a>
-                                         </li>
-                                         <li class="page-item">
-                                             <a class="page-link" href="/page-3" aria-label="Goto Page 3">3</a>
-                                         </li>
-                                         <li class="page-item">
-                                             <a class="page-link" href="/page-4" aria-label="Goto Page 4">4</a>
-                                         </li>
-                                         <li class="page-item">
-                                             <a class="page-link" href="/page-5" aria-label="Goto Page 5">5</a>
-                                         </li>
-                                         <li class="page-item">
-                                             <a class="page-link" href="/page-5" aria-label="Goto Others 5">...</a>
-                                         </li>
-                                         <li class="page-item">
-                                             <a class="page-link" href="/page-5" aria-label="Goto Last Page">28</a>
-                                         </li>
-                                         <li class="page-item ">
-                                           <a class="page-link next" aria-label="Goto Next Page" href="#"><span>Наступна</span>
-                                             <img src="icons/arrow-point-to-right (2)-2.svg" alt="">
-                                           </a>
-                                         </li>
-                                     </ul>
-                                 </nav>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="/page-1" aria-label="Goto Page 1">1</a>
+                                        </li>
+                                        <li class="page-item active">
+                                            <a class="page-link" href="/page-2" aria-label="Goto Page 2">2</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="/page-3" aria-label="Goto Page 3">3</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="/page-4" aria-label="Goto Page 4">4</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="/page-5" aria-label="Goto Page 5">5</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="/page-5" aria-label="Goto Others 5">...</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="/page-5" aria-label="Goto Last Page">28</a>
+                                        </li>
+                                        <li class="page-item ">
+                                            <a class="page-link next" aria-label="Goto Next Page" href="#"
+                                                ><span>Наступна</span>
+                                                <img src="icons/arrow-point-to-right (2)-2.svg" alt="" />
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
                             </div>
                             <!-- pagination-end -->
-                     </div>
-                 </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>    
         </main>
 
-
-         <!-- footer start -->
-         <footer class="footer">
+        <!-- footer start -->
+        <footer class="footer">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-2">
@@ -326,13 +284,13 @@
                     <div class="col-12 col-md-8 col-xl-7 offset-xl-1">
                         <div class="footer__menu d-flex justify-content-between">
                             <ul class="footer__menu-item">
-                                <li><a href="#">Головна</a></li>
-                                <li><a href="#">Про нас</a></li>
+                                <li><a href="index.html">Головна</a></li>
+                                <li><a href="about-us.html">Про нас</a></li>
                                 <li><a href="#">Онлайн модулі</a></li>
                                 <li><a href="#">Курси для вчителів і студентів</a></li>
                                 <li><a href="#">Всеукраїнський консорціум з інклюзивної освіти</a></li>
                                 <li><a href="#">Ефективні інклюзивні практики</a></li>
-                                <li><a href="#">Питання - відповіді</a></li>
+                                <li><a href="FAQ.html">Питання - відповіді</a></li>
                                 <li><a href="#">Корисна інформація для батьків</a></li>
                             </ul>
                             <ul class="footer__menu-item">
@@ -340,13 +298,13 @@
                                     <a href="#">Бібліотека</a>
                                     <ul>
                                         <li><a href="#">Нормативно-правова база</a></li>
-                                        <li><a href="#">Тематична література</a></li>
-                                        <li><a href="#">Кінотека</a></li>
+                                        <li><a href="literature.html">Тематична література</a></li>
+                                        <li><a href="video-page.html">Кінотека</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="#">Фотогалерея</a></li>
-                                <li><a href="#">Новини</a></li>
-                                <li><a href="#">Мапа сайту</a></li>
+                                <li><a href="news.html">Новини</a></li>
+                                <li><a href="map.html">Мапа сайту</a></li>
                                 <li><a href="#">Зворотній зв’язок</a></li>
                             </ul>
                         </div>
@@ -356,7 +314,7 @@
                         </p>
                     </div>
                     <div class="col-12 col-md-2">
-                        <div class="social-icon d-flex justify-content-end">
+                        <div class="social-icon d-flex justify-content-md-end justify-content-center">
                             <a href="#">
                                 <img src="icons/facebook.svg" alt="facebook" />
                             </a>
@@ -368,7 +326,7 @@
                 </div>
             </div>
         </footer>
-            <!-- footer end -->
+        <!-- footer end -->
         <script src="js/jquery-3.3.1.min.js"></script>
         <script src="js/main.js"></script>
     </body>

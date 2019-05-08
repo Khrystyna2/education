@@ -1,6 +1,6 @@
 .list-of-literature li span {
-	font-size: 24px;
-	line-height: 29px;
+	font-size: $fs + 4px;
+	line-height: $line-height - 5px;
 }
 .list-of-literature li {
 	margin-top: 45px;
